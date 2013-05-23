@@ -1,6 +1,9 @@
 <?php
 /**
  * Template Name: Landing Page
+ *
+ * Listing posts after category select
+ * 
  */
 
 get_header(); ?>
