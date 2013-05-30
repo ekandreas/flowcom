@@ -37,11 +37,11 @@
 				<?php endif; ?>
 				
 				<?php if ( !is_single() && get_the_title() ) : ?>
-					<h1>
+					<h2>
 						<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'blaskan' ), the_title_attribute( 'echo=0' ) ); ?>">
 							<?php the_title(); ?>
 						</a>
-					</h1>
+					</h2>
 				<?php elseif ( get_the_title() ): ?>
 					<h1><?php the_title(); ?></h1>
 				<?php endif; ?>

@@ -401,7 +401,7 @@ function blaskan_header_structure( $description = '' ) {
 		} else {
 			$header_element = 'div';
 		}
-		$output .= '<'.$header_element.' id="site-name"><a href="'.home_url( '/' ).'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">'.get_bloginfo( 'name' ).'</a></'.$header_element.'>';
+		//$output .= '<'.$header_element.' id="site-name"><a href="'.home_url( '/' ).'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">'.get_bloginfo( 'name' ).'</a></'.$header_element.'>';
 
 		$output .= blaskan_header_message( get_bloginfo( 'description' ) );
 	}
