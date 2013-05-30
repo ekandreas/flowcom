@@ -20,7 +20,7 @@
 	$stop = false;
 	$categories = get_the_category();
 	foreach( $categories as $category ){
-		if( $category->name == 'Tech Blog' ) $stop = true;
+		if( $category->name == 'Tech Blog' && !is_single() ) $stop = true;
 	}
 	if( $stop ) continue;
 
