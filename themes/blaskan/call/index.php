@@ -23,7 +23,7 @@
 		<div data-role="page">
 
 			<div data-role="header">
-				<h1>Phonebook</h1>
+				<h1>Flowcom<br/>Phonebook</h1>
 			</div><!-- /header -->
 
 			<div data-role="content">
@@ -52,7 +52,7 @@
 			</div><!-- /content -->
 
 			<div data-role="footer">
-				<a href="/" data-role="button" data-icon="home" data-theme="a">Get back home</a>
+				<a href="/" data-role="button" data-icon="home" data-theme="a">Back to home</a>
 			</div><!-- /footer -->
 
 
