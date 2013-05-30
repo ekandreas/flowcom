@@ -41,7 +41,7 @@
 
 			<div style="min-width: 400px;">
 				<div style="float:left;">
-					<a href="/" title="Hem till Flowcom AB"></a><img src="<?php echo get_template_directory_uri(); ?>/img/flowcom_logo.gif" alt="Flowcom Logo" /></a>
+					<a href="/" title="Hem till Flowcom AB"><img src="<?php echo get_template_directory_uri(); ?>/img/flowcom_logo.gif" alt="Flowcom Logo" /></a>
 				</div>
 				<div style="float:right">
 					<a href="/" title="Hem till Flowcom AB"><img id="roller_image" src="<?php echo get_template_directory_uri(); ?>/img/transparent.gif" alt="Transparent" /></a>
