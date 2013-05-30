@@ -75,7 +75,7 @@
 
 		if( is_front_page() ){
 			?>
-			<div class="fb-like" data-href="http://www.facebook.se/flowcomab" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
+			<div class="fb-like" data-href="https://www.facebook.se/flowcomab" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
 			<?php
 		}
 		else {
