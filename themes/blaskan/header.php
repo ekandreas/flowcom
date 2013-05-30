@@ -58,12 +58,12 @@
 		<?php
 		if( is_front_page() ){
 			?>
-			<div class="fb-like" data-href="https://www.facebook.com/flowcomab" data-send="true" data-width="400" data-show-faces="false" data-font="lucida grande"></div>
+			<div class="fb-like" data-href="https://www.facebook.com/flowcomab" data-send="true" data-width="380" data-show-faces="false" data-font="lucida grande"></div>
 			<?php
 		}
 		else {
 			?>
-			<div class="fb-like" data-href="<?php echo get_permalink( get_the_ID() ); ?>" data-send="true" data-width="400" data-show-faces="false" data-font="lucida grande"></div>
+			<div class="fb-like" data-href="<?php echo get_permalink( get_the_ID() ); ?>" data-send="true" data-width="380" data-show-faces="false" data-font="lucida grande"></div>
 			<?php
 		}
 		?>
