@@ -258,6 +258,23 @@ function blaskan_options_do_page() {
 
 				<?php
 				/**
+				 * Header Min Width
+				 */
+				if ( empty ( $options['header_min_width'] ) || !is_numeric ( $options['header_min_width'] ) ) {
+					$header_min_width = '350';
+				} else {
+					$header_min_width = $options['header_min_width'];
+				}
+				?>
+				<tr valign="top"><th scope="row"><?php _e( 'Min head width', 'blaskan' ); ?></th>
+					<td>
+						<input type="text" id="blaskan_options[header_min_width]" name="blaskan_options[header_min_width]" value="<?php echo $header_min_width; ?>" /> px<br/>
+						<label class="description" for="blaskan_options[header_min_width]"><?php _e( 'The minimum width of the header', 'blaskan' ); ?></label>
+					</td>
+				</tr>
+
+				<?php
+				/**
 				 * Hide site title and header message?
 				 */
 				if ( !empty( $options['hide_site_title_header_message'] ) ) {
@@ -363,6 +380,9 @@ function blaskan_options_validate( $input ) {
 
 	// Header image height
 	$input['header_image_height'] = esc_attr( $input['header_image_height'] );
+
+	// Header image height
+	$input['header_min_width'] = esc_attr( $input['header_min_width'] );
 
 	// Footer message may contain allowed HTML tags
 	$input['footer_message'] = wp_filter_post_kses( $input['footer_message'] );
