@@ -37,8 +37,22 @@
 <?php echo blaskan_top(); ?>
 <div id="site">
 	<div id="wrapper">
-		<header id="header" role="banner">
 
+		<?php
+		$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+		$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+		$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+		$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+		$wphone = strpos($_SERVER['HTTP_USER_AGENT'],"Windows Phone");
+
+		if (is_front_page() && ( $iphone || $android || $palmpre || $berry || $wphone == true ) ){
+			?>
+			<a href="<?php echo get_template_directory_uri(); ?>/jqmphp/call.php" style="text-decoration: none;"><div id="mobile_call">Mobile and want to call us?</div></a>
+			<?php
+		}
+		?>
+
+		<header id="header" role="banner">
 			<div>
 				<div style="float:left;">
 					<a href="/" title="Hem till Flowcom AB"><img src="<?php echo get_template_directory_uri(); ?>/img/flowcom_logo.gif" alt="Flowcom Logo" /></a>
