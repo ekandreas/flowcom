@@ -20,6 +20,11 @@
 	</head>
 	<body>
 
+		<p>
+			<a href="http://www.flowcom.se" data-role="button" data-icon="home" data-theme="a">Flowcom Phonebook</a>
+		</p>
+
+
 		<ul data-role="listview" data-inset="true">
 			<li><a href="tel:+46812451333">
 					<img src="flowcom_web_150.png">
@@ -44,7 +49,7 @@
 		</ul>
 
 		<p>
-			<a href="/" data-role="button" data-icon="home" data-theme="a">Get back home</a>
+			<a href="http://www.flowcom.se" data-role="button" data-icon="home" data-theme="a">Get back home</a>
 		</p>
 
 	</body>
