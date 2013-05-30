@@ -41,10 +41,6 @@
 					</figure>
 				<?php endif; ?>
 				
-			  <?php if ( get_post_type() !== 'page' ): ?>
-				  <time datetime="<?php the_date('c'); ?>" pubdate><?php print get_the_date(); ?></time>
-				<?php endif; ?>
-				
 				<?php if ( !is_single() && get_the_title() ) : ?>
 					<h2>
 						<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'blaskan' ), the_title_attribute( 'echo=0' ) ); ?>">
@@ -54,6 +50,11 @@
 				<?php elseif ( get_the_title() ): ?>
 					<h1><?php the_title(); ?></h1>
 				<?php endif; ?>
+
+				<?php if ( get_post_type() !== 'page' ): ?>
+					<time datetime="<?php the_date('c'); ?>" pubdate><?php print get_the_date(); ?></time>
+				<?php endif; ?>
+
 			</header>
 		
 			<div class="content">

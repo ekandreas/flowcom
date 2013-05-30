@@ -12,15 +12,13 @@ while ( have_posts() ) : the_post(); ?>
 					</figure>
 				<?php endif; ?>
 
-				<?php if ( get_post_type() !== 'page' ): ?>
-					<time datetime="<?php the_date('c'); ?>" pubdate><?php print get_the_date(); ?></time>
-				<?php endif; ?>
-
 				<h2>
 					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'blaskan' ), the_title_attribute( 'echo=0' ) ); ?>">
 						<?php the_title(); ?>
 					</a>
 				</h2>
+				<time datetime="<?php the_date('c'); ?>" pubdate><?php print get_the_date(); ?></time>
+
 			</header>
 
 			<div class="content">
