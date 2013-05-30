@@ -43,6 +43,10 @@
 			</li>
 		</ul>
 
+		<p>
+			<a href="/" data-role="button" data-icon="home" data-theme="a">Get back home</a>
+		</p>
+
 	</body>
 
 </html>
