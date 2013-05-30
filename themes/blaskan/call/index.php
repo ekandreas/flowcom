@@ -23,7 +23,7 @@
 		<div data-role="page">
 
 			<div data-role="header">
-				<h1>Flowcom Phonebook</h1>
+				<h1>Phonebook</h1>
 			</div><!-- /header -->
 
 			<div data-role="content">
