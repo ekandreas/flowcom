@@ -15,8 +15,17 @@
 <?php endif; ?>
 
 <?php // Start the loop ?>
-<?php while ( have_posts() ) : the_post(); ?>
-	
+<?php while ( have_posts() ) : the_post();
+
+	$stop = false;
+	$categories = get_the_category();
+	foreach( $categories as $category ){
+		if( $category->name == 'Tech Blog' ) $stop = true;
+	}
+	if( $stop ) continue;
+
+	?>
+
 	<?php if ( ( is_archive() || is_author() ) && ( !is_category() && !is_tag() ) ) : // Archives ?>
 		<li>
 		  <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'blaskan' ), the_title_attribute( 'echo=0' ) ); ?>"><?php the_title(); ?></a>

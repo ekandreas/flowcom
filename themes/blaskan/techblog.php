@@ -1,8 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Techblog
+ */
+
+get_header(); ?>
 
 	<section id="content" role="main">
-		TEKNIKBLOGG
-		<?php get_template_part( 'loop', 'index' ); ?>
+		<?php get_template_part( 'tech_loop', 'index' ); ?>
 	</section>
 	<!-- / #content -->
 
