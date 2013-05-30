@@ -21,22 +21,22 @@
 	<body>
 
 		<ul data-role="listview" data-inset="true">
-			<li><a href="+46812451333">
+			<li><a href="tel:+46812451333">
 					<img src="flowcom_web_150.png">
 					<h2>Office</h2>
 					<p>+46 (0) 8 - 124 51 333</p></a>
 			</li>
-			<li><a href="+46703032203">
+			<li><a href="tel:+46703032203">
 					<img src="andreas.png">
 					<h2>Andreas Ek</h2>
 					<p>+46 (0) 70 303 22 03</p></a>
 			</li>
-			<li><a href="+46768790953">
+			<li><a href="tel:+46768790953">
 					<img src="mattias.png">
 					<h2>Mattias Johansson</h2>
 					<p>+46 (0) 76 - 879 09 53</p></a>
 			</li>
-			<li><a href="+46706783907">
+			<li><a href="tel:+46706783907">
 					<img src="stefan.png">
 					<h2>Stefan Christoffersson</h2>
 					<p>+46 (0) 70 678 39 07</p></a>
