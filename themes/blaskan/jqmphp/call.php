@@ -35,11 +35,14 @@
     $p->addContent('<h3>Phone Book</h3>');
     $list3 = new jqmListview();
     $list3->inset(true);
-    $list3->addThumb('Office', '+46(0)8-12451333', '+46(0)8-12451333', 'flowcom_web_150.png');
+    $list3->addThumb('Office', '+46(0)8-12451333', '+46812451333', 'flowcom_web_150.png');
     $list3->addThumb('Andreas Ek', '+46 (0) 70 - 303 22 03', '+46703032203', 'andreas.png');
     $list3->addThumb('Mattias Johansson', '+46 (0) 76 - 879 09 53', '+46768790953', 'mattias.png');
     $list3->addThumb('Stefan Christoffersson', '+46 (0) 70 - 678 39 07', '+46706783907', 'stefan.png');
     $p->addContent($list3);
+
+		$p->addContent('<p>&nbsp;</p>');
+		$p->addContent('<p>&nbsp;</p>');
 
     /**
      * Add the page to jqmPhp object.
