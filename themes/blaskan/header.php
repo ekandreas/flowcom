@@ -39,7 +39,7 @@
 	<div id="wrapper">
 		<header id="header" role="banner">
 
-			<div style="min-width: 400px;">
+			<div>
 				<div style="float:left;">
 					<a href="/" title="Hem till Flowcom AB"><img src="<?php echo get_template_directory_uri(); ?>/img/flowcom_logo.gif" alt="Flowcom Logo" /></a>
 				</div>
