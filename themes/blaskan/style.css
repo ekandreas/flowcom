@@ -35,6 +35,13 @@ http://www.helloper.com/blog/2012/06/getting-help-with-blaskan-and-wordpress/
 	font-size: 20px;
 	text-decoration: none;
 	color:#fff;
+	-webkit-background-clip: padding-box;
+	border: 1px solid #000;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 }
 
 #roller_image{
