@@ -38,7 +38,21 @@
 <div id="site">
 	<div id="wrapper">
 		<header id="header" role="banner">
-		  <?php echo blaskan_header_structure(); ?>
+
+			<div>
+				<div style="float:left;">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/flowcom_logo.gif" alt="Flowcom Logo" />
+				</div>
+				<div style="float:right">
+					<img id="roller_image" src="<?php echo get_template_directory_uri(); ?>/img/transparent.gif" alt="Transparent" />
+				</div>
+				<div style="clear:both"></div>
+			</div>
+
+		  <?php //echo blaskan_header_structure(); ?>
+
+			<?php echo blaskan_primary_nav(); ?>
+
 		</header>
 
 		<?php
