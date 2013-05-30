@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	
-		<article id="content" role="main" <?php post_class(); ?>>
+
+	<article id="content" role="main" <?php post_class(); ?>>
 
 				<header>
 					<?php if ( has_post_thumbnail() ) : ?>
@@ -15,6 +15,15 @@
 						<h1><?php the_title(); ?></h1>
 					<?php endif; ?>
 				</header>
+
+				<?php
+				if( is_front_page() ){
+					global $blaskan_options;
+					?>
+					<div class="fb-like" data-href="https://www.facebook.com/flowcomab" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
+					<?php
+				}
+				?>
 
 				<div class="content"><?php the_content(); ?></div>
 				

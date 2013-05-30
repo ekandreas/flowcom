@@ -70,20 +70,9 @@
 		</header>
 
 		<?php
-
 		global $blaskan_options;
-
-		if( is_front_page() ){
-			?>
-			<div class="fb-like" data-href="https://www.facebook.se/flowcomab" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
-			<?php
-		}
-		else {
-			?>
-			<div class="fb-like" data-href="<?php echo get_permalink( get_the_ID() ); ?>" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
-			<?php
-		}
 		?>
+		<div style="min-width:<?php echo $blaskan_options['header_min_width']; ?>px">&nbsp;</div>
 
 <!-- / #header -->
 		

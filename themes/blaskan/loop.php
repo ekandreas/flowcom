@@ -32,8 +32,18 @@
 		  <time datetime="<?php the_date('c'); ?>"><?php print get_the_date(); ?></time>
 		</li>
 	<?php else: // Else ?>
-		
+
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+			<?php
+			if( !is_home() ){
+				global $blaskan_options;
+				?>
+				<div class="fb-like" data-href="<?php echo get_permalink( get_the_ID() ); ?>" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
+				<?php
+			}
+			?>
+
 			<header>
 				<?php if ( has_post_thumbnail() ) : ?>
 				  <figure class="post-thumbnail">
@@ -55,8 +65,9 @@
 					<time datetime="<?php the_date('c'); ?>" pubdate><?php print get_the_date(); ?></time>
 				<?php endif; ?>
 
+
 			</header>
-		
+
 			<div class="content">
 				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'blaskan' ) ); ?>
 				<?php wp_link_pages( array( 'before' => '<nav class="page-link" role="navigation">' . __( 'Pages:', 'blaskan' ), 'after' => '</nav>' ) ); ?>
