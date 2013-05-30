@@ -45,11 +45,11 @@
 		$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
 		$wphone = strpos($_SERVER['HTTP_USER_AGENT'],"Windows Phone");
 
-		//if (is_front_page() && ( $iphone || $android || $palmpre || $berry || $wphone == true ) ){
+		if (is_front_page() && ( $iphone || $android || $palmpre || $berry || $wphone == true ) ){
 			?>
 			<a id="call_button" href="<?php echo get_template_directory_uri(); ?>/call/" style="display:none; text-decoration: none;"><div id="mobile_call">Mobile and want to call us?</div></a>
 			<?php
-		//}
+		}
 		?>
 
 		<header id="header" role="banner">
