@@ -62,7 +62,7 @@ class jqmListitem extends jqmTag {
      * @param bool $isThumb
      * @param string $splitHref
      */
-    function __construct($id='', $attributes=array(), $items=array(), $divider=false, $title='', $href='', $count='', $img='', $subTitle='', $isThumb=false, $splitHref='', $rel='', $target='', $splitRel='', $splitTarget='') {
+    function __construct($id='', $attributes=array(), $items=array(), $divider=false, $title='', $href='', $count='', $img='', $subTitle='', $isThumb=true, $splitHref='', $rel='', $target='', $splitRel='', $splitTarget='') {
         parent::__construct('li', $id, $attributes, $items);
         $this->_divider = $this->attribute('data-role', (($divider) ? 'list-divider' : ''), true);
         $this->_title = $title;
