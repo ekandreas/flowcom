@@ -10,6 +10,7 @@
 	<title><?php blaskan_head_title(); ?></title>
 	<?php wp_head(); ?>
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 </head>
 <body <?php body_class(); ?>>
 <script type="text/javascript">
