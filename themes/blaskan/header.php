@@ -47,7 +47,7 @@
 
 		if (is_front_page() && ( $iphone || $android || $palmpre || $berry || $wphone == true ) ){
 			?>
-			<a href="<?php echo get_template_directory_uri(); ?>/jqmphp/call.php" style="text-decoration: none;"><div id="mobile_call">Mobile and want to call us?</div></a>
+			<a href="<?php echo get_template_directory_uri(); ?>/call/" style="text-decoration: none;"><div id="mobile_call">Mobile and want to call us?</div></a>
 			<?php
 		}
 		?>
