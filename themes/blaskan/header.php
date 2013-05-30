@@ -25,11 +25,33 @@
 	})();
 
 </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1&appId=408187365893048";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 <?php echo blaskan_top(); ?>
 <div id="site">
 	<div id="wrapper">
 		<header id="header" role="banner">
 		  <?php echo blaskan_header_structure(); ?>
 		</header>
-		<!-- / #header -->
+
+		<?php
+		if( is_front_page() ){
+			?>
+			<div class="fb-like" data-href="https://www.facebook.com/flowcomab" data-send="true" data-width="250" data-show-faces="false" data-font="lucida grande"></div>
+			<?php
+		}
+		else {
+			?>
+			<div class="fb-like" data-href="<?php echo get_permalink( get_the_ID() ); ?>" data-send="true" data-width="250" data-show-faces="false" data-font="lucida grande"></div>
+			<?php
+		}
+		?>
+
+<!-- / #header -->
 		

@@ -396,13 +396,7 @@ function blaskan_header_structure( $description = '' ) {
 	endif;
 
 	if ( $blaskan_options['hide_site_title_header_message'] !== 1 ) {
-		if ( is_front_page() ) {
-			$header_element = 'h1';
-		} else {
-			$header_element = 'div';
-		}
 		//$output .= '<'.$header_element.' id="site-name"><a href="'.home_url( '/' ).'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">'.get_bloginfo( 'name' ).'</a></'.$header_element.'>';
-
 		$output .= blaskan_header_message( get_bloginfo( 'description' ) );
 	}
 
