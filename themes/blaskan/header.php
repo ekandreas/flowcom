@@ -45,11 +45,11 @@
 		$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
 		$wphone = strpos($_SERVER['HTTP_USER_AGENT'],"Windows Phone");
 
-		if (is_front_page() && ( $iphone || $android || $palmpre || $berry || $wphone == true ) ){
+		//if (is_front_page() && ( $iphone || $android || $palmpre || $berry || $wphone == true ) ){
 			?>
-			<a href="<?php echo get_template_directory_uri(); ?>/call/" style="text-decoration: none;"><div id="mobile_call">Mobile and want to call us?</div></a>
+			<a id="call_button" href="<?php echo get_template_directory_uri(); ?>/call/" style="display:none; text-decoration: none;"><div id="mobile_call">Mobile and want to call us?</div></a>
 			<?php
-		}
+		//}
 		?>
 
 		<header id="header" role="banner">
@@ -75,7 +75,7 @@
 
 		if( is_front_page() ){
 			?>
-			<div class="fb-like" data-href="https://www.facebook.com/flowcomab" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
+			<div class="fb-like" data-href="http://www.facebook.se/flowcomab" data-send="true" data-width="<?php echo $blaskan_options['header_min_width']; ?>" data-show-faces="false" data-font="lucida grande"></div>
 			<?php
 		}
 		else {
