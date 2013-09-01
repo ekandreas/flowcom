@@ -11,6 +11,7 @@
 	<?php wp_head(); ?>
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 </head>
 <body <?php body_class(); ?>>
 <script type="text/javascript">
